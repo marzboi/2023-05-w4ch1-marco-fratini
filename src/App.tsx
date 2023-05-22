@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import { Header } from "./component/header";
 import { ButtonSelectAll } from "./component/button";
 import { Main } from "./component/main";
