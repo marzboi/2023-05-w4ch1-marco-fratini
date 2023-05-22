@@ -7,7 +7,7 @@ export const pointingGentlemen = [
     twitter: "@osbourne",
     picture: "bertin.jpg",
     alternativeText: "Osbourne pointing at you",
-    selected: true,
+    selected: false,
   },
   {
     name: "The Farytale",
@@ -27,6 +27,6 @@ export const pointingGentlemen = [
     twitter: "@julius_churchs",
     picture: "julio.jpg",
     alternativeText: "Churchs pointing at you",
-    selected: true,
+    selected: false,
   },
 ];
