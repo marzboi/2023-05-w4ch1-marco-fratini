@@ -29,4 +29,14 @@ export const pointingGentlemen = [
     alternativeText: "Churchs pointing at you",
     selected: false,
   },
+  {
+    id: 4,
+    name: "Nitin Ballz",
+    status: "Alive",
+    profession: "Python developer",
+    twitter: "@Nitido_coming_at_you",
+    picture: "nitin.jpg",
+    alternativeText: "Nitin will ball you down",
+    selected: false,
+  },
 ];
