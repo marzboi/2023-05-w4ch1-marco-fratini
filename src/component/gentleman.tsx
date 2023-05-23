@@ -59,13 +59,11 @@ export function Gentleman() {
           selected ? "selected" : ""
         }`}
         onClick={() => {
-          const updatedGentlemen = gentlemen.map((gentlemanItem) =>
-            gentlemanItem.id === id
-              ? { ...gentlemanItem, selected: true }
-              : gentlemanItem
+          setGentlemen(
+            gentlemen.map((item) =>
+              item.id === id ? { ...item, selected: true } : item
+            )
           );
-          setGentlemen(updatedGentlemen);
-          console.log(updatedGentlemen);
         }}
       ></i>
       <i
