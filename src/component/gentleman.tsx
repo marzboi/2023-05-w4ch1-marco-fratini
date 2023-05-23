@@ -54,7 +54,20 @@ export function Gentleman() {
           </li>
         </ul>
       </div>
-      <i className="icon gentleman__icon fas fa-check"></i>
+      <i
+        className={`icon gentleman__icon fas fa-check ${
+          selected ? "selected" : ""
+        }`}
+        onClick={() => {
+          const updatedGentlemen = gentlemen.map((gentlemanItem) =>
+            gentlemanItem.id === id
+              ? { ...gentlemanItem, selected: true }
+              : gentlemanItem
+          );
+          setGentlemen(updatedGentlemen);
+          console.log(updatedGentlemen);
+        }}
+      ></i>
       <i
         className="icon gentleman__icon gentleman__icon--delete fas fa-times"
         onClick={() => {
